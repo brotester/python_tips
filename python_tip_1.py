@@ -1,14 +1,19 @@
-metro_areas = [
-('Tokyo', 'JP', 36.933, (35.689722, 139.691667)),
-('Delhi NCR', 'IN', 21.935, (28.613889, 77.208889)),
-('Mexico City', 'MX', 20.142, (19.433333, -99.133333)),
-('New York-Newark', 'US', 20.104, (40.808611, -74.020386)),
-('Sao Paulo', 'BR', 19.649, (-23.547778, -46.635833)),
+workers = [
+    ('April Cisneros', 'heather05', 'hreed@yahoo.com', '1929-08-17'),
+    ('Amber Jefferson', 'gloria67', 'harrisrichard@gmail.com', '1918-09-18'),
+    ('Denise Ingram', 'walkerlori', 'jeremy88@yahoo.com', '2019-09-04'),
+    ('Tyler Spears', 'john72', 'sanchezsarah@gmail.com', '1963-05-31'),
+    ('Kayla Mack', 'alexis27', 'sandersvalerie@hotmail.com', '2014-03-08'),
+    ('James Stevens', 'quinnkelly', 'vazquezrebecca@hotmail.com', '1984-01-10'),
+    ('Timothy Moyer', 'ariassteven', 'laura91@yahoo.com', '1905-08-08'),
+    ('Douglas Walters', 'mpotter', 'hbutler@yahoo.com', '1904-11-17'),
+    ('Annette Griffin', 'josephwaller', 'tnguyen@gmail.com', '1976-06-08'),
+    ('Valerie Butler', 'hendersonrobin', 'michaellowery@hotmail.com', '1913-07-18'),
 ]
 
 
 if __name__ == '__main__':
-    # print('{:15} | {:^9} | {:^9}'.format('', 'lat.', 'long.'))
-    # fmt = '{:15} | {:9.4f} | {:9.4f}'
-    # for name, cc, pop, (latitude, longitude) in metro_areas:
-    #     print(fmt.format(name, latitude, longitude))
+    print('{:15} | {:15} | {:30} | {:5}'.format('Name', 'Nick', 'Mail', 'Birthdate'))
+    fmt = '{:15} | {:15} | {:30} | {:5}'
+    for name, nick, mail, birthdate in workers:
+        print(fmt.format(name, nick, mail, birthdate))
